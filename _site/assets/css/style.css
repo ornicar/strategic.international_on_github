@@ -216,7 +216,7 @@ a:focus {
 ################################################################# */
 
 #headerwrap {
-	background-color: #00b3fe;
+	background: url(../img/header_city.png) no-repeat center top;
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
