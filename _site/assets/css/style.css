@@ -217,7 +217,7 @@ a:focus {
 
 #headerwrap {
 	background: url(../img/bw_city_header.jpg) no-repeat center top;
-	background-color: #00b3fe;
+	/* background-color: #00b3fe; */
 	min-height: 0px;
 	padding-top: 100px;
 	padding-bottom: 50px;
