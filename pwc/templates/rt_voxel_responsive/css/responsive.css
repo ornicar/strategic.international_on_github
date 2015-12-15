@@ -1,0 +1,92 @@
+/**
+ * @package   $Id: responsive.css 6068 2012-12-18 15:29:23Z james $
+ * @version   1.3-SNAPSHOT December 13, 2012
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+
+/* Core */
+.rt-image {max-width: 100%;height: auto;}
+body .rt-block {margin: 15px 10px;}
+body #rt-navigation .rt-block.menu-block {margin: 10px;}
+body #rt-navigation .rt-menubar {margin: -10px 4px -11px -14px;}
+body.col12 .rt-grid-2 #login-form .inputbox, body.col12 .rt-grid-3 #login-form .inputbox, body.col12 .rt-grid-4 #login-form .inputbox, body.col12 .rt-grid-5 #login-form .inputbox, body.col12 .rt-grid-6 #login-form .inputbox, body.col12 .rt-grid-7 #login-form .inputbox, body.col12 .rt-grid-8 #login-form .inputbox, body.col12 .rt-grid-9 #login-form .inputbox, body.col12 .rt-grid-10 #login-form .inputbox, body.col12 .rt-grid-12 #login-form .inputbox, body.col12 .rt-grid-2 #form-login .inputbox, body.col12 .rt-grid-3 #form-login .inputbox, body.col12 .rt-grid-4 #form-login .inputbox, body.col12 .rt-grid-5 #form-login .inputbox, body.col12 .rt-grid-6 #form-login .inputbox, body.col12 .rt-grid-7 #form-login .inputbox, body.col12 .rt-grid-8 #form-login .inputbox, body.col12 .rt-grid-9 #form-login .inputbox, body.col12 .rt-grid-10 #form-login .inputbox, body.col12 .rt-grid-12 #form-login .inputbox {width: 95%;}
+body #rt-navigation .rt-alpha {margin-left: -11px;}
+body #rt-navigation .rt-omega {margin-right: -11px;}
+body .style-panel-container {z-index: 1000000;}
+
+/* Navigation */
+.rt-menu-mobile {text-align: center;padding: 15px 0;}
+
+/* Utility Classes */
+.visible-phone {display: none !important;}
+.visible-tablet {display: none !important;}
+.visible-desktop {display: none !important;}
+.hidden-large {display: none !important;}
+
+/* Responsive */
+@media only screen and (min-width: 1200px) {
+	body .visible-large {display: inherit !important;}
+	body .hidden-large {display: none !important;}
+}
+
+@media only screen and (min-width: 960px) and (max-width: 1199px) {
+	body .visible-large {display: none !important;}
+	body .hidden-large {display: inherit !important;}
+	body .visible-desktop {display: inherit !important;}
+	body .hidden-desktop {display: none !important;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	body .visible-tablet {display: inherit !important;}
+	body .hidden-tablet {display: none !important;}
+	body .hidden-desktop {display: inherit !important;}
+	body .visible-desktop {display: none !important;}
+	body .visible-large {display: none !important;}
+	body .hidden-large {display: inherit !important;}
+	body .layout-slideshow .sprocket-features-content {width: 59%;}
+	body .menutop li .item {font-size: 1em;}
+}
+
+@media only screen and (min-width: 768px) {
+	.rt-menu-mobile {display: none;}
+}
+
+@media only screen and (max-width: 767px) {
+	body .visible-phone {display: inherit !important;}
+	body .hidden-phone {display: none !important;}
+	body .hidden-desktop {display: inherit !important;}
+	body .visible-desktop {display: none !important;}
+	body .hidden-large {display: inherit !important;}
+	body .visible-large {display: none !important;}
+	body #rt-logo {margin: -20px auto;}
+	.rt-block.menu-block {visibility: hidden;top: -30000px;left: -30000px;position: absolute;}
+	.rt-totop {position: static;float: right;margin-right: -21px;}
+	body .component-content	.column-1, body .component-content .column-2, body .component-content	.column-3 {width: 100% !important;float: none !important;margin-left: 0 !important;margin-right: 0 !important;margin-bottom: 0 !important;}	
+	body .rt-demo-width-20, body .rt-demo-width-25, body .rt-demo-width-30, body .rt-demo-width-33, body .rt-demo-width-40, body .rt-demo-width-50, body .rt-demo-width-60, body .rt-demo-width-66, body .rt-demo-width-70, body .rt-demo-width-75, body .rt-demo-width-80 {width: 100%;}
+	.rt-demo-space {margin: 5px;}
+	body .rt-container .floatleft, body .rt-container .floatright {float: none;}
+	body #rt-main-container #rt-body-surround {padding: 5px 0;}
+	body #rt-header {margin-top: -20px;padding-top: 20px;}
+	body #rt-header .rt-social-buttons {float: none;margin: -10px auto;position: relative;max-width: 120px;}
+	body #rt-header [class*="rt-grid"] {float: left;}
+	body #rt-slideinset .rt-block {padding: 15px;margin: 15px 0;position: relative;right: inherit;top: 15px;width: inherit;}
+	body .layout-slideshow .sprocket-features-content {left: 15px;right: 15px;width: auto;}
+	body .layout-slideshow .sprocket-features-title {font-size: 2.2em;}
+	body .style-panel-container {display: none;}
+	body #rt-utility .horizmenu ul.menu li {display: block;border: none;}
+	body .sprocket-mosaic .sprocket-mosaic-header .sprocket-mosaic-order {float: left;margin-top: 10px;}
+	body .sprocket-tabs-nav li {float: none;}
+	body .rg-ss-slice-container {max-width: 100% !important;height: auto !important;}
+	body .rg-ss-navigation-container {max-width: 100% !important;height: auto !important;}
+	body .rg-ss-thumb-list, body #main .rg-ss-thumb-list {width: 100% !important;}
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 480px) {
+	#rt-copyright .rt-block {clear: both;}
+	body .layout-slideshow .sprocket-features-desc {display: none;}
+}

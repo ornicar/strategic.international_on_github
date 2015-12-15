@@ -1,0 +1,111 @@
+/**
+ * @version   $Id: thirdparty-k2-light.css 596 2012-05-02 00:04:02Z josh $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* K2 Global */
+#k2Container h3, #k2Container h2, #k2Container h1, #k2Container h4 {color: #333;font-weight: normal;font-family: 'PTSerifRegular',Helvetica,Arial,sans-serif;}
+
+/* K2 Font Controls */
+div.itemToolbar ul li a#fontDecrease img, div.itemToolbar ul li a#fontIncrease img {background-image: url(../images/overlays/light/arrows.png);}
+div.itemToolbar ul li a#fontDecrease img:hover, div.itemToolbar ul li a#fontIncrease img:hover {background-color: #4A4A4A;}
+
+/* K2 Readon */
+#k2Container .button, .k2UserBlock .button, span.catItemAddLink a, span.userItemAddLink a, span.userItemEditLink a, span.catItemEditLink a, span.itemEditLink a {background-image: url(../images/overlays/dark/readon.png) !important;}
+span.catItemAddLink a:hover, span.userItemAddLink a:hover, span.userItemEditLink a:hover, span.catItemEditLink a:hover, span.itemEditLink a:hover {background: transparent;}
+
+/* K2 Tags */
+div.k2TagCloudBlock a, div.k2ItemsBlock ul li div.moduleItemTags a {background-color:#FBFBFB;border: 1px solid #DCDCDC;background-image: url(../images/overlays/light/readon.png);color: #777777;}
+.module-content .k2TagCloudBlock a:hover, div.k2ItemsBlock ul li div.moduleItemTags a:hover {background-image: url(../images/overlays/light/readon.png);color: white;text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);background-position: 0 0;border-color: transparent;}
+div.catItemTagsBlock ul.catItemTags li, div.itemTagsBlock ul.itemTags li, div.userItemTagsBlock ul.userItemTags li, div.latestItemTagsBlock ul.latestItemTags li {background-color:#FBFBFB;border: 1px solid #DCDCDC;background-image: url(../images/overlays/light/readon.png);}
+div.catItemTagsBlock ul.catItemTags li a, div.itemTagsBlock ul.itemTags li a, div.userItemTagsBlock ul.userItemTags li a, div.latestItemTagsBlock ul.latestItemTags li a {color: #777777;}
+div.catItemTagsBlock ul.catItemTags li:hover, div.itemTagsBlock ul.itemTags li:hover, div.userItemTagsBlock ul.userItemTags li:hover, div.latestItemTagsBlock ul.latestItemTags li:hover {background-image: url(../images/overlays/light/readon.png);color: white;text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3);background-position: 0 0;border-color: transparent;}
+div.catItemTagsBlock ul.catItemTags li:hover a,div.itemTagsBlock ul.itemTags li:hover a, div.userItemTagsBlock ul.userItemTags li:hover a, div.latestItemTagsBlock ul.latestItemTags li:hover a {color: white;}
+
+/* K2 Arrow Items */
+#k2Container .groupLinks .catItemTitle a, div.k2UserBlock ul.k2UserBlockActions li a, div.k2LatestCommentsBlock ul li span.lcComment {padding-left: 12px;background: url(../images/overlays/light/arrows.png) 2px -305px no-repeat;font-size: 13px;}
+
+/* K2 Author */
+#k2Container .catItemView .catItemAuthor, #k2Container span.itemAuthor, div.k2ItemsBlock ul li div.moduleItemAuthor  {background-color: whiteSmoke;border-top: 1px solid #CCC;background-image: url(../images/overlays/light/dude-icon.png);}
+
+/* K2 IMG Tags */
+.itemListView .catItemImage img, #k2Container .itemImage img, #k2Container .authorResponse img, #k2Container .userItemImageBlock img, #k2Container .genericItemImageBlock img, .k2UsersBlock .ubUserAvatar img,.k2LatestCommentsBlock ul li .lcAvatar img,.k2Avatar img, div.k2ItemsBlock ul li div.moduleItemIntrotext a.moduleItemImage img, div.subCategory a.subCategoryImage img, span.tagItemImage img, div.userBlock img, span.latestItemImage img, span.tagItemImage img, div.tagItemIntroText img, div.latestItemsUser img, div.latestItemIntroText img, div.k2ItemsBlock ul li a.moduleItemAuthorAvatar img, div.latestItemsCategoryImage img,div.itemAuthorBlock img.itemAuthorAvatar  {border: 0 none;background: none;}
+
+/* K2 Categories */
+#k2Container  div.latestItemsCategory, #k2Container .itemListCategory, #k2Container .userBlock, #k2Container .subCategory {box-shadow: -1px 1px 4px rgba(0,0,0,0.1);background-color: white;border: 1px solid #CCC;}
+div.latestItemsCategory:before,#k2Container div.itemListCategory:before, #k2Container .userBlock:before, #k2Container .subCategory:before {background-image: url(../images/overlays/light/mod-shadow-l.png);}
+div.latestItemsCategory:after,#k2Container div.itemListCategory:after, #k2Container .userBlock:after, #k2Container .subCategory:after {background-image: url(../images/overlays/light/mod-shadow-b.png);}
+ 
+/* K2 Item Links */
+#k2Container .userItemLinks, #k2Container .itemLinks, #k2Container .catItemLinks, #k2Container .latestItemLinks, #k2Container div.itemAuthorBlock, div.k2ItemsBlock ul li div.moduleItemTags {border: 1px solid #fff;background: #F5F5F5;outline: 1px solid #ddd;}
+
+/* K2 Block Items */
+div.k2LatestCommentsBlock ul li, div.k2TopCommentersBlock ul li, div.k2ItemsBlock ul li, div.k2UserBlock ul.k2UserBlockActions li, div.k2UserBlock ul.k2UserBlockRenderedMenu li {border-bottom: 1px dashed #D9D9D9;}
+
+/* K2 Inputboxes */
+#k2Container .inputbox, div.k2SearchBlock form input.inputbox, div.k2LoginBlock fieldset.input p input {border: 1px solid #CCC;}
+
+/* K2 Item View */
+#k2Container div.itemIntroText {color: #444;font-size: 100%;font-weight: bold;line-height: 24px;padding: 4px 0 0px 0;}
+#k2Container div.itemTwitterButton,#k2Container  div.itemGooglePlusOneButton {margin: 2px -24px 0 0;}
+#k2Container div.itemContentFooter, {border: 0 none;}
+#k2Container div.itemAuthorBlock {padding: 10px;}
+#k2Container div.tagItemView {border: 0 none;}
+
+/* K2 Category */
+#k2Container .catItemRatingBlock span {color: #666;}
+#k2Container .catItemCategory span {background: url(../images/overlays/light/publish-icon.png) 0 3px no-repeat;}
+#k2Container .catItemTagsBlock, div.k2ItemsBlock ul li div.moduleItemTags b  {background: url(../images/overlays/light/tag-icon.png) 0 7px no-repeat;}
+#k2Container .catItemCommentsLink {background: url(../images/overlays/light/comments-icon.png) 0 3px no-repeat;border: 0;}
+
+/* K2 Items */
+#k2Container .itemDateModified {border: 0;color: #666;}
+#k2Container .itemRatingBlock span {color: #666;}
+
+/* K2 Items - Links */
+#k2Container .itemTagsBlock span {background: url(../images/overlays/light/tag-icon.png) 0 2px no-repeat;}
+#k2Container .itemCategory span {background: url(../images/overlays/light/publish-icon.png) 0 3px no-repeat;}
+
+/* K2 Items - Author / Related */
+#k2Container .itemAuthorLatest ul li a, #k2Container .itemRelated ul li a {background: url(../images/overlays/light/arrows.png) 2px -305px no-repeat;font-size: 100%;}
+#k2Container .itemAuthorLatest {float: left;margin-right: 20px;}
+
+/* K2 User */
+#k2Container .userItemCategory span {background: url(../images/overlays/light/publish-icon.png) 0 3px no-repeat;}
+#k2Container .userItemTagsBlock {background: url(../images/overlays/light/tag-icon.png) 0 7px no-repeat;}
+#k2Container .userItemDateCreated {color: #666;}
+
+/* K2 Generic */
+#k2Container .genericItemDateCreated {color: #666;}
+#k2Container .genericItemCategory {background: url(../images/overlays/light/publish-icon.png) 0 3px no-repeat;}
+#k2Container .genericItemTagsBlock {background: url(../images/overlays/light/tag-icon.png) 0 7px no-repeat;}
+
+/* K2 Content Module */
+div.k2ItemsBlock ul li span.moduleItemDateCreated {}
+div.k2ItemsBlock ul li div.moduleItemTags b {background: url(../images/overlays/light/tag-icon.png) 0 -1px no-repeat;}
+
+/* K2 Comments Module */
+.k2LatestCommentsBlock ul li, #k2Container .itemCommentsList li {background: none;border-bottom: 1px dashed #D9D9D9;}
+
+/* K2 Users Module */
+.k2UsersBlock ul.ubUserItems li a {background: url(../images/overlays/light/arrows.png) 2px -305px no-repeat;font-size: 100%;}
+
+/* K2 Categories Module */
+.k2CategoriesListBlock ul li a {background: url(../images/overlays/light/paging-arrows.png) -3px -133px no-repeat;color: #707070;}
+div.k2CategoriesListBlock ul li.activeCategory > a {box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.1);background: whiteSmoke url(../images/overlays/light/paging-arrows.png) 4px -128px no-repeat;}
+
+/* K2 Calendar Module */
+.k2CalendarBlock .calendarToday, .k2CalendarBlock .calendarDateLinked a:hover {background: url(../images/overlays/light/overlay-color2.html);}
+
+/* K2 Archives */
+div.k2ArchivesBlock ul li a {background: url(../images/overlays/light/arrows.png) 2px -305px no-repeat;font-size: 100%;}
+
+/* K2 Login */
+div.k2LoginBlock ul li a {background: url(../images/overlays/light/arrows.png) 2px -305px no-repeat;font-size: 100%;}
+
+/* K2 Latest*/
+#k2Container .latestItemCategory span {background: url(../images/overlays/light/tag-icon.png) 0 2px no-repeat;}
+#k2Container .latestItemTagsBlock span {background: url(../images/overlays/light/publish-icon.png) 0 3px no-repeat;}
+

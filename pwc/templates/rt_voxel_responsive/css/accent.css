@@ -1,0 +1,100 @@
+/**
+* @version   $Id: accent.css 5923 2012-12-13 16:57:10Z james $
+* @author    RocketTheme http://www.rockettheme.com
+* @copyright Copyright (C) 2007 - 2012 RocketTheme, LLC
+* @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+*/
+
+/* Logo */
+.logo-voxel-logostyle-style1 #rt-logo {background-image: url(../images/logo/preset1/logo.png);}
+.logo-voxel-logostyle-style2 #rt-logo {background-image: url(../images/logo/preset2/logo.png);}
+.logo-voxel-logostyle-style3 #rt-logo {background-image: url(../images/logo/preset3/logo.png);}
+.logo-voxel-logostyle-style4 #rt-logo {background-image: url(../images/logo/preset4/logo.png);}
+.logo-voxel-logostyle-style5 #rt-logo {background-image: url(../images/logo/preset5/logo.png);}
+.logo-voxel-logostyle-style6 #rt-logo {background-image: url(../images/logo/preset6/logo.png);}
+.logo-voxel-logostyle-style7 #rt-logo {background-image: url(../images/logo/preset7/logo.png);}
+.logo-voxel-logostyle-style8 #rt-logo {background-image: url(../images/logo/preset8/logo.png);}
+.logo-voxel-logostyle-style9 #rt-logo {background-image: url(../images/logo/preset9/logo.png);}
+.logo-voxel-logostyle-style10 #rt-logo {background-image: url(../images/logo/preset10/logo.png);}
+.logo-voxel-logostyle-style11 #rt-logo {background-image: url(../images/logo/preset11/logo.png);}
+.logo-voxel-logostyle-style12 #rt-logo {background-image: url(../images/logo/preset12/logo.png);}
+
+/* Menu - DARK */
+.accent-overlay-dark .menu-block a, .accent-overlay-dark .menu-block .nolink, .accent-overlay-dark .menu-block .nolink:hover, .accent-overlay-dark .fusion-js-subs a, .accent-overlay-dark .fusion-js-subs a:hover, .accent-overlay-dark .fusion-js-subs .nolink, .accent-overlay-dark .fusion-js-subs .nolink:hover, .fusion-js-subs .fusion-module, .fusion-js-subs .fusion-module .title, .fusion-js-subs .fusion-module a {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.4);}
+.accent-overlay-dark .rt-menubar .menutop li:hover > .item, .accent-overlay-dark .rt-menubar .menutop li.f-mainparent-itemfocus > .item {border-left: 1px solid rgba(225,225,225,0.4);border-right: 1px solid rgba(225,225,225,0.4);border-top: 1px solid rgba(225,225,225,0.4);}
+.accent-overlay-dark .rt-menubar .menutop li:hover, .accent-overlay-dark .rt-menubar .menutop li.f-mainparent-itemfocus {border-left: 1px solid rgba(0,0,0,0.3);border-right: 1px solid rgba(0,0,0,0.3);border-top: 1px solid rgba(0,0,0,0.3);box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.3);}
+.accent-overlay-dark .fusion-submenu-wrapper {border: 1px solid rgba(0,0,0,0.3);box-shadow: 0 2px 3px rgba(0,0,0,0.5);}
+.accent-overlay-dark .fusion-submenu-wrapper:before {border: 1px solid rgba(225,225,225,0.4);}
+.menutop.fusion-js-container ul li > .item:hover, .menutop.fusion-js-container li.f-menuparent-itemfocus > .item, .menutop.fusion-js-container ul li.active > .item, .menutop.fusion-js-container li.active.f-menuparent-itemfocus > .item {box-shadow: inset 0 0 4px rgba(0,0,0,0.3);border-bottom: 1px solid rgba(225,225,225,0.3);border-top: 1px solid rgba(0,0,0,0.2);border-left: 1px solid rgba(0,0,0,0.2);border-right: 1px solid rgba(0,0,0,0.2);}
+.accent-overlay-dark .fusion-submenu-wrapper {background-image: url(../images/overlays/dark/menu-overlay.png);}
+.accent-overlay-dark .daddyicon, .accent-overlay-dark .menutop ul li > .daddy span {background-image: url(../images/overlays/dark/arrows.png);}
+.accent-overlay-dark #rokajaxsearch .inputbox {box-shadow: 1px 1px 1px rgba(0,0,0,0.3);}
+.accent-overlay-dark #rokajaxsearch .inputbox:focus {box-shadow: inset 1px 1px 1px rgba(0,0,0,0.3);}
+
+/* Menu - LIGHT */
+.accent-overlay-light .menu-block a, .accent-overlay-light .menu-block .nolink, .accent-overlay-light .menu-block .nolink:hover, .accent-overlay-light .fusion-js-subs a, .accent-overlay-light .fusion-js-subs a:hover, .accent-overlay-light .fusion-js-subs .nolink, .accent-overlay-light .fusion-js-subs .nolink:hover, .fusion-js-subs .fusion-module, .fusion-js-subs .fusion-module .title, .fusion-js-subs .fusion-module a {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.4);}
+.accent-overlay-light .rt-menubar .menutop li.active .item {background-color: #46433C;background-image: url(../images/overlays/light/light-10.png);box-shadow: inset 0 2px 8px rgba(0,0,0,0.7);}
+.accent-overlay-light .rt-menubar .menutop li:hover > .item, .accent-overlay-light .rt-menubar .menutop li.f-mainparent-itemfocus > .item {border-left: 1px solid rgba(225,225,225,0.4);border-right: 1px solid rgba(225,225,225,0.4);border-top: 1px solid rgba(225,225,225,0.4);}
+.accent-overlay-light .rt-menubar .menutop li:hover, .accent-overlay-light .rt-menubar .menutop li.f-mainparent-itemfocus {border-left: 1px solid rgba(0,0,0,0.3);border-right: 1px solid rgba(0,0,0,0.3);border-top: 1px solid rgba(0,0,0,0.3);box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.3);}
+.accent-overlay-light .fusion-submenu-wrapper {border: 1px solid rgba(0,0,0,0.3);box-shadow: 0 2px 3px rgba(0,0,0,0.5);}
+.accent-overlay-light .fusion-submenu-wrapper:before {border: 1px solid rgba(225,225,225,0.4);}
+.menutop.fusion-js-container ul li > .item:hover, .menutop.fusion-js-container li.f-menuparent-itemfocus > .item, .menutop.fusion-js-container ul li.active > .item, .menutop.fusion-js-container li.active.f-menuparent-itemfocus > .item {box-shadow: inset 0 0 4px rgba(0,0,0,0.3);border-bottom: 1px solid rgba(225,225,225,0.3);border-top: 1px solid rgba(0,0,0,0.2);border-left: 1px solid rgba(0,0,0,0.2);border-right: 1px solid rgba(0,0,0,0.2);}
+.accent-overlay-light .fusion-submenu-wrapper {background-image: url(../images/overlays/light/menu-overlay.png);}
+.accent-overlay-light .daddyicon, .accent-overlay-light .menutop ul li > .daddy span {background-image: url(../images/overlays/light/arrows.png);}
+.accent-overlay-light #rokajaxsearch .inputbox {box-shadow: 1px 1px 1px rgba(0,0,0,0.2);}
+.accent-overlay-light #rokajaxsearch .inputbox:focus {box-shadow: inset 1px 1px 1px rgba(0,0,0,0.2);}
+
+/* Buttons & Inputs - DARK */
+.accent-overlay-dark .button, .accent-overlay-dark .readon, .accent-overlay-dark .readmore, .accent-overlay-dark button.validate, .accent-overlay-dark .box1 a.readon:hover, .accent-overlay-dark #member-profile a, .accent-overlay-dark #member-registration a, .accent-overlay-dark .formelm-buttons button, .accent-overlay-dark .btn {background-image: url(../images/overlays/dark/readon.png);text-shadow: -1px -1px 1px rgba(0,0,0,0.3);color: #fff !important;}
+.accent-overlay-dark .readmore a {color: #fff !important;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);}
+
+/* Buttons & Inputs - LIGHT */
+.accent-overlay-light .button, .accent-overlay-light .readon, .accent-overlay-light .readmore, .accent-overlay-light button.validate, .accent-overlay-light .box1 a.readon:hover, .accent-overlay-light #member-profile a, .accent-overlay-light #member-registration a, .accent-overlay-light .formelm-buttons button, .accent-overlay-light .btn, .component-body .btn {background-image: url(../images/overlays/light/readon.png);text-shadow: 1px 1px 1px rgba(225,225,225,0.5);color: #000 !important;}
+.accent-overlay-light .readmore a {color: #000 !important;text-shadow: 1px 1px 1px rgba(225,225,225,0.5);}
+.accent-overlay-light .button:before, .accent-overlay-light .readon:before, .accent-overlay-light .readmore:before, .accent-overlay-light button.validate:before, .accent-overlay-light #member-profile a:before, .accent-overlay-light #member-registration a:before, .accent-overlay-light .formelm-buttons button:before, .accent-overlay-light .btn:before, .component-body .btn:before {border-top: 1px solid rgba(225,225,225,0.5);border-radius: 3px;}
+
+/* Copyright - LIGHT */
+.main-pattern-scratch #rt-copyright a, .main-pattern-graph #rt-copyright a, .main-pattern-leather-light #rt-copyright a, .main-pattern-diagonal #rt-copyright a, .main-pattern-crackle #rt-copyright a, .main-pattern-psychedelic #rt-copyright a, .main-pattern-quilt #rt-copyright a, .main-pattern-triangles #rt-copyright a, .main-pattern-scratch #rt-copyright .separator, .main-pattern-graph #rt-copyright .separator, .main-pattern-leather-light #rt-copyright .separator, .main-pattern-diagonal #rt-copyright .separator, .main-pattern-crackle #rt-copyright .separator, .main-pattern-psychedelic #rt-copyright .separator, .main-pattern-quilt #rt-copyright .separator, .main-pattern-triangles #rt-copyright .separator {color: #787878;}
+.main-pattern-scratch #rt-copyright a:hover, .main-pattern-graph #rt-copyright a:hover, .main-pattern-leather-light #rt-copyright a:hover, .main-pattern-diagonal #rt-copyright a:hover, .main-pattern-crackle #rt-copyright a:hover, .main-pattern-psychedelic #rt-copyright a:hover, .main-pattern-quilt #rt-copyright a:hover, .main-pattern-triangles #rt-copyright a:hover, .main-pattern-crackle #rt-copyright .menu .active a, .main-pattern-psychedelic #rt-copyright .menu .active a, .main-pattern-quilt #rt-copyright .menu .active a, .main-pattern-triangles #rt-copyright .menu .active a, .main-pattern-scratch #rt-copyright .menu .active a, .main-pattern-graph #rt-copyright .menu .active a, .main-pattern-leather-light #rt-copyright .menu .active a, .main-pattern-diagonal #rt-copyright .menu .active a, .main-pattern-scratch #rt-copyright .separator:hover, .main-pattern-graph #rt-copyright .separator:hover, .main-pattern-leather-light #rt-copyright .separator:hover, .main-pattern-diagonal #rt-copyright .separator:hover, .main-pattern-crackle #rt-copyright .separator:hover, .main-pattern-psychedelic #rt-copyright .separator:hover, .main-pattern-quilt #rt-copyright .separator:hover, .main-pattern-triangles #rt-copyright .separator:hover, .main-pattern-crackle #rt-copyright .menu .active .separator, .main-pattern-psychedelic #rt-copyright .menu .active .separator, .main-pattern-quilt #rt-copyright .menu .active .separator, .main-pattern-triangles #rt-copyright .menu .active .separator, .main-pattern-scratch #rt-copyright .menu .active .separator, .main-pattern-graph #rt-copyright .menu .active .separator, .main-pattern-leather-light #rt-copyright .menu .active .separator, .main-pattern-diagonal #rt-copyright .menu .active .separator {color: #222;}
+
+/* Copyright - DARK */
+.main-pattern-leather-dark #rt-copyright a, .main-pattern-argyle #rt-copyright a, .main-pattern-iron #rt-copyright a, .main-vertical-lines #rt-copyright a, .main-pattern-leather-dark #rt-copyright .separator, .main-pattern-argyle #rt-copyright .separator, .main-pattern-iron #rt-copyright .separator, .main-vertical-lines #rt-copyright a {color: #787878;}
+.main-pattern-leather-dark #rt-copyright a:hover, .main-pattern-argyle #rt-copyright a:hover, .main-pattern-iron #rt-copyright a:hover, .main-pattern-vertical-lines #rt-copyright a:hover, .main-pattern-leather-dark #rt-copyright .menu .active a, .main-pattern-argyle #rt-copyright .menu .active a, .main-pattern-iron #rt-copyright .menu .active a, .main-pattern-vertical-lines #rt-copyright .menu .active a, .main-pattern-leather-dark #rt-copyright .separator:hover, .main-pattern-argyle #rt-copyright .separator:hover, .main-pattern-iron #rt-copyright .separator:hover, .main-pattern-vertical-lines #rt-copyright .separator:hover, .main-pattern-leather-dark #rt-copyright .menu .active .separator, .main-pattern-argyle #rt-copyright .menu .active .separator, .main-pattern-iron #rt-copyright .menu .active .separator, .main-pattern-vertical-lines #rt-copyright .menu .active a {color: #fff;}
+
+/* Gantry Features - DARK */
+.accent-overlay-dark .rt-fontsizer-buttons .button {background-image: url(../images/overlays/dark/arrows.png);}
+.main-pattern-leather-dark #rt-copyright #rocket, .main-pattern-argyle #rt-copyright #rocket, .main-pattern-iron #rt-copyright #rocket, .main-pattern-vertical-lines #rt-copyright #rocket {background: url(../images/overlays/dark/rocket.png) no-repeat;}
+
+/* Gantry Features - LIGHT */
+.accent-overlay-light .rt-fontsizer-buttons .button {background-image: url(../images/overlays/light/arrows.png);}
+.main-pattern-scratch #rt-copyright #rocket, .main-pattern-graph #rt-copyright #rocket, .main-pattern-leather-light #rt-copyright #rocket, .main-pattern-diagonal #rt-copyright #rocket, .main-pattern-crackle #rocket, .main-pattern-psychedelic #rocket, .main-pattern-quilt #rocket, .main-pattern-triangles #rocket {background: url(../images/overlays/light/rocket.png) no-repeat;}
+
+/* Sprocket - DARK */
+.accent-overlay-dark .sprocket-lists .sprocket-lists-title {border: 1px solid rgba(0, 0, 0, 0.3);}
+.accent-overlay-dark .sprocket-lists .sprocket-lists-title > span {border: 1px solid rgba(225, 225, 225, 0.3);}
+.accent-overlay-dark .sprocket-lists .sprocket-lists-title {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);background-image: url(../images/overlays/dark/light-10.png);}
+.accent-overlay-dark .sprocket-lists-title .indicator {background-image: url(../images/overlays/dark/list-arrows.png);}
+.accent-overlay-dark .sprocket-corner-badge:after {background-image: url(../images/overlays/dark/badge-overlay.png);}
+.accent-overlay-dark .sprocket-lists .sprocket-corner-badge:after {background-image: url(../images/overlays/dark/badge-overlay-sm.png);}
+.accent-overlay-dark .sprocket-badge-icon {background-image: url(../images/overlays/dark/badge-icons.png);}
+.accent-overlay-dark .sprocket-lists .sprocket-badge-icon {background-image: url(../images/overlays/dark/badge-icons-sm.png);}
+
+/* Sprocket - LIGHT */
+.accent-overlay-light .sprocket-lists .sprocket-lists-title {border: 1px solid rgba(0, 0, 0, 0.3);}
+.accent-overlay-light .sprocket-lists .sprocket-lists-title > span {border: 1px solid rgba(225, 225, 225, 0.3);}
+.accent-overlay-light .sprocket-lists .sprocket-lists-title {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);background-image: url(../images/overlays/light/light-10.png);}
+.accent-overlay-light .sprocket-lists-title .indicator {background-image: url(../images/overlays/light/list-arrows.png);}
+.accent-overlay-light .sprocket-corner-badge:after {background-image: url(../images/overlays/light/badge-overlay.png);}
+.accent-overlay-light .sprocket-lists .sprocket-corner-badge:after {background-image: url(../images/overlays/light/badge-overlay-sm.png);}
+.accent-overlay-light .sprocket-badge-icon {background-image: url(../images/overlays/light/badge-icons.png);}
+.accent-overlay-light .sprocket-lists .sprocket-badge-icon {background-image: url(../images/overlays/light/badge-icons-sm.png);}
+
+/* Module Variations - DARK */
+.accent-overlay-dark .box1, .accent-overlay-dark .box1 .title, .accent-overlay-dark .box1 h2, .accent-overlay-dark .box1 a:hover, .accent-overlay-dark #rt-copyright .box1 a:hover {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);}
+.accent-overlay-dark .box1 .rt-block {background-image: url(../images/overlays/dark/menu-overlay.png);}
+.accent-overlay-dark .title4 .title {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);box-shadow: inset 0 0 5px rgba(0,0,0,0.5);}
+
+/* Module Variations - LIGHT */
+.accent-overlay-light .box1, .accent-overlay-light .box1 .title, .accent-overlay-light .box1 h2, .accent-overlay-light .box1 a:hover {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);}
+.accent-overlay-light .box1 .rt-block {background-image: url(../images/overlays/light/menu-overlay.png);}
+.accent-overlay-light .title4 .title {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.3);box-shadow: inset 0 0 5px rgba(0,0,0,0.5);}

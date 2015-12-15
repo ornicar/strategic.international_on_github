@@ -1,0 +1,9 @@
+#rt-header p {
+margin-bottom: 0;
+margin-left: -10px;
+}
+
+.logo-type-voxel #rt-logo {width: 800px;height: 125px;display: block;}
+
+#rt-logo {display: block;margin: -30px 0;}
+/* Logo */
