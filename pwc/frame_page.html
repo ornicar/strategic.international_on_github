@@ -9,8 +9,20 @@
     <title>Frame Page - PWC - Progress with Chess - PWC - Progress with Chess</title>
 </head>
 <body>
-    <div style="overflow: hidden; width: 775px;"> 
-        <iframe id="my_frame" scrolling="no" src="http://en.lichess.org/training" style="border: 0px none; margin-left: -230px; height: 585px; margin-top: -60px; width: 1030px;"></iframe> 
+    <div id="philanthro_container" style="width: 253px;">
+        <div class="philantro-progress" data-campaign="151"></div>
+            <script>
+                (function() {
+                var ph = document.getElementsByTagName('script')[0];
+                var URI = window.location.href;
+                var s = document.createElement('script');
+                s.type = "text/javascript"; s.async = true;
+                s.src = "//s3-us-west-2.amazonaws.com/philantro/pdf/philantro.js";
+                window.options = { EIN: '341961748', Referrer: URI};
+                ph.parentNode.insertBefore(s, ph);
+                })();
+            </script>
+        <div class="clear"></div>    </div>
     </div>
 </body>
 </html>
