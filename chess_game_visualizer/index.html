@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <title>Game Visualizer</title>
+    <link href="css/chessboard.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Helvetica Neue";
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 12px;
+            list-style-position: outside;
+            margin: 0px;
+            margin-bottom: 10px;
+        }
+        ul li {
+            margin: 5px;
+            margin-right: 0px;
+            padding: 5px;
+            padding-right: 0px;
+        }
+        h1 {
+            margin: 0px;
+        }
+        a:link {
+            color: lightgrey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:visited {
+            color: lightgrey;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: yellow;
+            background-color: lightgrey;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="textarea_and_board" style="display: inline-block;">
+        <div id="left_div" style="float: left; margin-right: 5px; width: 300px; height: 600px;">
+            <div id="logo_div" style="width: 300px; height: 150px; margin-bottom: 10px;">
+                <a href="http://strategic.international/" target="_blank"><img src="img/SI_Logo_small_cropped.png" style="width: 150px; height: 150px; float: left;"></img></a>
+                <div id="title_div" style="width: 150px; float: left;">
+                    <h1 style="padding-left: 10px; padding-top: 20px;">Chess Game Visualizer</h1>
+                    <p style="font-size: 10px; float: left; padding-right: 15px; margin-top: 5px;"><a href="http://www.progresswithchess.org/index.php?option=com_content&view=article&id=164:taylorshockey&catid=8:about-pwc" target="_blank">by: Taylor Lovell Shockey</a></p>
+                </div>
+            </div>
+            <div id="instructions" style="width: 300px;">
+                <ul>
+                    <li> <strong>Give:</strong> Chess PGN (Portable Game Notation) in the text box.</li>
+                    <li><strong>Get:</strong> A table of images depicting how the chessboard will look after each move.</li>
+                </ul>
+            </div>
+            <textarea id="pgn_textarea" style="width: 294px; height: 300px;"></textarea>
+            <button id="submit_button" type="button" onclick="run_it();" style="font-size: 14px; font-family: 'Helvetica Neue'; float: right; margin-top: 5px;">Submit</button>
+        </div>
+        <div id="board" style="float: left; width: 600px;"></div>
+        <!-- <div id="results" style="width: 596px; height: 20px; background-color: lightgrey;"></div> -->
+    </div>
+    <div id="results" style="width: 620px; margin-left: 302px;"></div>
+    <script src="js/json3.min.js"></script> 
+    <script src="js/jquery-1.10.1.min.js"></script> 
+    <script src="js/chessboard.js"></script>
+    <script src="js/html2canvas.js"></script>
+    <script src="js/chess.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script>
+        var _0xf9f3=["\x62\x6F\x61\x72\x64","\x73\x74\x61\x72\x74","\x72\x65\x61\x64\x79","\x76\x61\x6C\x75\x65","\x70\x67\x6E\x5F\x74\x65\x78\x74\x61\x72\x65\x61","\x67\x65\x74\x45\x6C\x65\x6D\x65\x6E\x74\x42\x79\x49\x64","\x64\x65\x66\x61\x75\x6C\x74\x56\x61\x6C\x75\x65","\x6C\x6F\x61\x64\x5F\x70\x67\x6E","\x68\x69\x73\x74\x6F\x72\x79","\x54\x75\x72\x6E\x20","\x6C\x65\x6E\x67\x74\x68","\x63\x65\x69\x6C","\x20\x68\x61\x64\x20\x61\x6E\x20\x69\x6C\x6C\x65\x67\x61\x6C\x20\x6D\x6F\x76\x65\x2E\x20\x54\x72\x75\x6E\x63\x61\x74\x69\x6E\x67\x20\x67\x61\x6D\x65\x20\x74\x6F\x20\x74\x68\x69\x73\x20\x70\x6F\x69\x6E\x74\x2E","\x6C\x6F\x67","\x6D\x6F\x76\x65\x73","\x54\x75\x72\x6E\x3A\x20","\x4D\x6F\x76\x65\x20\x6D\x61\x64\x65\x3A\x20","\x6D\x6F\x76\x65","\x61\x73\x63\x69\x69","\x50\x6F\x73\x73\x69\x62\x6C\x65\x20\x6D\x6F\x76\x65\x73\x20\x66\x72\x6F\x6D\x20\x74\x68\x69\x73\x20\x70\x6F\x73\x69\x74\x69\x6F\x6E\x3A\x20","\x66\x65\x6E","\x76\x61\x6C\x69\x64\x61\x74\x65\x5F\x66\x65\x6E","\x70\x75\x73\x68","\x71\x20\x69\x73\x20","\x74\x6F\x44\x61\x74\x61\x55\x52\x4C","\x54\x44","\x63\x72\x65\x61\x74\x65\x45\x6C\x65\x6D\x65\x6E\x74","\x7A","\x69\x64","\x73\x65\x74\x41\x74\x74\x72\x69\x62\x75\x74\x65","\x61\x6C\x69\x67\x6E","\x49\x4D\x47","\x63\x72\x65\x61\x74\x65\x54\x65\x78\x74\x4E\x6F\x64\x65","\x50","\x73\x74\x79\x6C\x65","\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x3B\x20\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x30\x3B\x20\x74\x65\x78\x74\x2D\x61\x6C\x69\x67\x6E\x3A\x20\x63\x65\x6E\x74\x65\x72\x3B\x20\x66\x6F\x6E\x74\x2D\x73\x69\x7A\x65\x3A\x20\x31\x36\x70\x78\x3B","\x61\x70\x70\x65\x6E\x64\x43\x68\x69\x6C\x64","\x73\x72\x63","\x61\x6C\x74","\x68\x65\x69\x67\x68\x74","\x31\x34\x35\x70\x78","\x77\x69\x64\x74\x68","\x69\x6E\x73\x65\x72\x74\x69\x6E\x67\x20\x72\x6F\x77","\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x3B\x20\x70\x61\x64\x64\x69\x6E\x67\x3A\x20\x30\x3B\x20\x74\x65\x78\x74\x2D\x63\x6F\x6C\x6F\x72\x3A\x20\x6C\x69\x67\x68\x74\x67\x72\x65\x79\x3B","\x63\x68\x69\x6C\x64\x4E\x6F\x64\x65\x73","\x69\x6E\x73\x65\x72\x74\x42\x65\x66\x6F\x72\x65","\x62\x72","\x74\x68\x65\x6E","\x23\x62\x6F\x61\x72\x64","\x6D\x79\x54\x61\x62\x6C\x65","\x72\x65\x6D\x6F\x76\x65","\x54\x41\x42\x4C\x45","\x6D\x61\x72\x67\x69\x6E\x3A\x20\x30\x70\x78\x3B\x20\x62\x6F\x72\x64\x65\x72\x2D\x73\x70\x61\x63\x69\x6E\x67\x3A\x20\x33\x70\x78","\x72\x65\x73\x75\x6C\x74\x73","\x54\x52","\x6D\x79\x54\x72","\x69\x73\x45\x6D\x70\x74\x79\x4F\x62\x6A\x65\x63\x74"];$(document)[_0xf9f3[2]](function(){ChessBoard(_0xf9f3[0],_0xf9f3[1])});var get_pgn_textarea=function(){pgn_textarea_value=document[_0xf9f3[5]](_0xf9f3[4])[_0xf9f3[3]];return document[_0xf9f3[5]](_0xf9f3[4])[_0xf9f3[6]]=pgn_textarea_value;},pgn_to_fen=function(_0x2415x5){var _0x2415x6= new Chess;_0x2415x5=_0x2415x6[_0xf9f3[7]](_0x2415x5);_0x2415x6=_0x2415x6[_0xf9f3[8]]();0==_0x2415x5&&console[_0xf9f3[13]](_0xf9f3[9]+Math[_0xf9f3[11]]((_0x2415x6[_0xf9f3[10]]+1)/2)+_0xf9f3[12]);_0x2415x5= new Chess;var _0x2415x7=_0x2415x5[_0xf9f3[14]](),_0x2415x8=[];for(i=0;i<_0x2415x6[_0xf9f3[10]];i++){console[_0xf9f3[13]](_0xf9f3[15]+Math[_0xf9f3[11]]((i+1)/2));console[_0xf9f3[13]](_0xf9f3[16]+_0x2415x6[i]);_0x2415x5[_0xf9f3[17]](_0x2415x6[i]);console[_0xf9f3[13]](_0x2415x5[_0xf9f3[18]]());_0x2415x7=_0x2415x5[_0xf9f3[14]]();console[_0xf9f3[13]](_0xf9f3[19]+_0x2415x7);var _0x2415x7=_0x2415x5[_0xf9f3[20]](),_0x2415x9=_0x2415x5[_0xf9f3[21]](_0x2415x7);console[_0xf9f3[13]](_0x2415x9);_0x2415x8[_0xf9f3[22]](_0x2415x7);};return [_0x2415x8,_0x2415x6];},make_boards=function(_0x2415x5,_0x2415x6){table_clear();table_insert();var _0x2415x7=row_insert(0);make_boards_recursive_loop(_0x2415x5,_0x2415x7,_0x2415x6,0);},make_boards_recursive_loop=function(_0x2415x5,_0x2415x6,_0x2415x7,_0x2415x8){_0x2415x8!=_0x2415x5[_0xf9f3[10]]&&(ChessBoard(_0xf9f3[0],_0x2415x5[_0x2415x8]),html2canvas($(_0xf9f3[48]))[_0xf9f3[47]](function(_0x2415x9){console[_0xf9f3[13]](_0xf9f3[23]+_0x2415x8);var _0x2415xa=(_0x2415x8+1)%4,_0x2415xb=(_0x2415x8+1)%2;_0x2415x9=_0x2415x9[_0xf9f3[24]]();var _0x2415xc=document[_0xf9f3[26]](_0xf9f3[25]);z_id=_0xf9f3[27]+_0x2415x8;_0x2415xc[_0xf9f3[29]](_0xf9f3[28],z_id);_0x2415xc[_0xf9f3[29]](_0xf9f3[30],top);var _0x2415xd=document[_0xf9f3[26]](_0xf9f3[31]),_0x2415xe=document[_0xf9f3[32]](_0x2415x7[_0x2415x8]),_0x2415xf=document[_0xf9f3[26]](_0xf9f3[33]);_0x2415xf[_0xf9f3[29]](_0xf9f3[34],_0xf9f3[35]);_0x2415xf[_0xf9f3[36]](_0x2415xe);_0x2415xd[_0xf9f3[29]](_0xf9f3[37],_0x2415x9);_0x2415xd[_0xf9f3[29]](_0xf9f3[38],_0xf9f3[0]+_0x2415x8);_0x2415xd[_0xf9f3[29]](_0xf9f3[39],_0xf9f3[40]);_0x2415xd[_0xf9f3[29]](_0xf9f3[41],_0xf9f3[40]);_0x2415xc[_0xf9f3[36]](_0x2415xd);_0x2415xc[_0xf9f3[36]](_0x2415xf);document[_0xf9f3[5]](_0x2415x6)[_0xf9f3[36]](_0x2415xc);0==_0x2415xa&&_0x2415x8<_0x2415x5[_0xf9f3[10]]-1&&(console[_0xf9f3[13]](_0xf9f3[42]),_0x2415x6=row_insert(_0x2415x8));0!=_0x2415xb?(_0x2415xa=document[_0xf9f3[32]](_0xf9f3[15]+Math[_0xf9f3[11]]((_0x2415x8+1)/2)),_0x2415xb=document[_0xf9f3[26]](_0xf9f3[33]),_0x2415xb[_0xf9f3[29]](_0xf9f3[34],_0xf9f3[43]),_0x2415xb[_0xf9f3[36]](_0x2415xa),document[_0xf9f3[5]](z_id)[_0xf9f3[45]](_0x2415xb,document[_0xf9f3[5]](z_id)[_0xf9f3[44]][0])):(_0x2415xa=document[_0xf9f3[26]](_0xf9f3[46]),document[_0xf9f3[5]](z_id)[_0xf9f3[45]](_0x2415xa,document[_0xf9f3[5]](z_id)[_0xf9f3[44]][0]));_0x2415x8++;make_boards_recursive_loop(_0x2415x5,_0x2415x6,_0x2415x7,_0x2415x8);}))};function table_clear(){null!=document[_0xf9f3[5]](_0xf9f3[49])&&document[_0xf9f3[5]](_0xf9f3[49])[_0xf9f3[50]]()}function table_insert(){var _0x2415x5=document[_0xf9f3[26]](_0xf9f3[51]);_0x2415x5[_0xf9f3[29]](_0xf9f3[28],_0xf9f3[49]);_0x2415x5[_0xf9f3[29]](_0xf9f3[34],_0xf9f3[52]);document[_0xf9f3[5]](_0xf9f3[53])[_0xf9f3[36]](_0x2415x5);}function row_insert(_0x2415x5){var _0x2415x6=document[_0xf9f3[26]](_0xf9f3[54]);_0x2415x5=_0xf9f3[55]+_0x2415x5;_0x2415x6[_0xf9f3[29]](_0xf9f3[28],_0x2415x5);document[_0xf9f3[5]](_0xf9f3[49])[_0xf9f3[36]](_0x2415x6);return _0x2415x5;}var run_it=function(){var _0x2415x5=pgn_to_fen(get_pgn_textarea()),_0x2415x6=_0x2415x5[0],_0x2415x5=_0x2415x5[1];1!=$[_0xf9f3[56]](_0x2415x5)&&make_boards(_0x2415x6,_0x2415x5);};
+    </script>
+</body>
+</html>
