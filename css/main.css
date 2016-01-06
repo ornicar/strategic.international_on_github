@@ -13,7 +13,7 @@
 
   body {
     background: #fff;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     font-weight: 300;
     font-size: 14px;
     line-height: 22px;
@@ -53,7 +53,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     font-weight: 300;
   }
 
@@ -82,7 +82,7 @@
     font-size: 14px;
     color: #0099ae;
     border: 1px solid #0099ae;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Times New Roman', sans-serif;
     font-weight: 300;
     padding: 10px 25px;
   }
@@ -270,6 +270,12 @@
   margin: 0;
 }
 
+#header .navbar-brand h1 img{
+  width: 50px;
+  height: 50px;
+  margin-right: 50px;
+}
+
 #header .navbar-nav.navbar-right >li:last-child{
   margin-right: 20px;
 }
@@ -449,7 +455,7 @@ ul.sub-menu {
   content: '"';
   font-size: 40px;
   color: #ea2c00;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   transform:rotate(180deg);
   -ms-transform:rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Opera, Chrome, and Safari */
@@ -463,7 +469,7 @@ ul.sub-menu {
   content: '"';
   font-size: 40px;
   color: #ea2c00;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Times New Roman', sans-serif;
   line-height: 0;
 }
 
