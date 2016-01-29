@@ -132,5 +132,6 @@ $( document ).ready(function() {
     $("#logo").click(function(e){
       e.preventDefault();
       commence_the_jigglin();
+      window.location.href = "../chess_game_visualizer";
     });
 });
